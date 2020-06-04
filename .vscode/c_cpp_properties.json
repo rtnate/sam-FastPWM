@@ -1,0 +1,55 @@
+{
+    "configurations": [
+        {
+            "name": "SAMD21",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\cores\\arduino\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\cores\\arduino\\",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\adafruit\\hardware\\samd\\1.5.14\\variants\\feather_m0\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS\\4.5.0\\CMSIS\\Include\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\CMSIS-Atmel\\1.2.0\\CMSIS\\Device\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\arm-none-eabi\\include\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\**",
+                "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\lib\\gcc\\arm-none-eabi\\7.2.1\\include-fixed"
+            ],
+            "defines": [
+                "ARDUINO_SAMD_ZERO ",
+                "ARM_MATH_CM0PLUS ",
+                "ADAFRUIT_FEATHER_M0 ",
+                "__SAMD21G18A__",
+                "USB_VID=0x239A",
+                "USB_PID=0x800B ",
+                "USBCON ",
+                "USB_CONFIG_POWER=\"{build.usb_power}\" ",
+                "USB_MANUFACTURER=\"Adafruit\"",
+                "USB_PRODUCT=\"Feather M0\" ",
+                "ARDUINO=1800",
+                "F_CPU=48000000L",
+                "__GNUC__"
+            ],
+            "windowsSdkVersion": "10.0.17763.0",
+            "compilerPath": "C:\\Users\\User\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\7-2017q4\\bin\\arm-none-eabi-g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-arm",
+            "compilerArgs": [
+                "-mcpu=cortex-m0plus",
+                "-mthumb",
+                "-c",
+                "-g",
+                "-Os",
+                "-w",
+                "-std=gnu++11",
+                "-ffunction-sections",
+                "-fdata-sections",
+                "-fno-threadsafe-statics",
+                "--param max-inline-insns-single=500",
+                "-fno-rtti",
+                "-fno-exceptions",
+                "-nostdlib"
+            ]
+        }
+    ],
+    "version": 4
+}
