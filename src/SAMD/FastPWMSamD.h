@@ -67,6 +67,19 @@ namespace SamD
                 //updateTest(pwmChannel, tcNum, tcChannel, value);
                 updateFunction(*this, value);
             }
+
+            /**
+             * @brief Check if the pin is ready to output PWM
+             * 
+             * @return true If the pin is ready.
+             * @return false If it is not.
+             */
+            bool ready()
+            {
+                if (updateFunction == &FastPWMPin::onUpdateNull) return false;
+                else return true;
+            }
+
         protected:
             /**
              * @brief The number of available timers
